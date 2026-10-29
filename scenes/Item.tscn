@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4yei5jq7rxy2"]
+
+[ext_resource type="Script" path="res://scenes/item.gd" id="1_thmis"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3tlh3"]
+
+[node name="Item" type="Area2D"]
+script = ExtResource("1_thmis")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_3tlh3")
